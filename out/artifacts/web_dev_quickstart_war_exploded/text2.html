@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <style type="text/css">
+        /*删除网页原本样式（左右两边留的白）*/
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            color: #333;
+        }
+        header{
+            height: 60px;
+            background-color: rgb(235,112,119);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        .nav{
+            flex: 0 0 50%;
+            list-style: none;
+            /*横着的列表*/
+            display: flex;
+        }
+        .nav li{
+            margin-left: 10;
+            margin-right: 10;
+            width: 50px;
+        }
+        .user-info{
+            padding-right: 20px;
+        }
+        /*超链接样式*/
+        .nav li a{
+            text-decoration: none;
+            color: #eee;
+        }
+        /*鼠标覆盖效果*/
+        .nav li a:hover{
+            color: #fff;
+        }
+        /*搜索区样式*/
+        .search-wrap{
+            height: 60px;
+            background-color:#ddd;
+            display: flex;
+            align-items: center;
+            /*边距*/
+            padding-left: 10%;
+            margin-bottom: 10px;
+        }
+        .input-box{
+            height: 40px;
+            width: 200px;
+            border: 1px solid #eee;
+            border-radius: 5px;
+            margin-left: 10px;
+        }
+        .container{
+            display: flex;
+            width: 80%;
+            margin: 0 auto;
+            height: 600px;
+            background-color: #eee;
+            padding: 5px 5px 5px 5px;
+        }
+        .left{
+            flex: 0 0 66%;
+            height: 90%;
+            background-color: #fff;
+            padding:10px 10 px 10 px 10px;
+        }
+        .right{
+            flex: 0 0 auto;
+            height: 90%;
+            background-color: #aaa;
+        }
+        .row{
+            display: flex;
+            /*自动换行*/
+            flex-wrap: wrap;
+            padding: 5px 5px 5px 5px;
+        }
+        .column{
+            flex:0 0 19%;
+            height: 220px;
+            background-color: #aaa;
+            border: 1px solid #333;
+            /*圆矩形*/
+            border-radius: 10px;
+            margin: 5px 5px 5px 5px;
+
+        }
+        </style>
+</head>
+<body>
+<header>
+<!--顶部导航-->
+    <div>
+        <!-- 导航-->
+        <ul class="nav">
+            <li>
+                <a href="#">AA</a>
+            </li>
+            <li>
+                <a href="#">AA</a>
+            </li>
+            <li>
+                <a href="#">AA</a>
+            </li>
+            <li>
+                <a href="#">AA</a>
+            </li>
+            <li>
+                <a href="#">AA</a>
+            </li>
+        </ul>
+    </div>
+    <div class="user-info">
+        <h3>admin</h3>
+    </div>
+</header>
+<!--搜索区-->
+<div class="search-wrap">
+    <h2>读书时刻</h2>
+    <input type="text" placeholder="输入想要搜索的内容" class="input-box">
+
+</div>
+<!--主体内容区-->
+<div class="container">
+    <div class="left">
+      <h2>好书精选</h2>
+        <hr>
+        <div class="row">
+            <div class="column"></div>
+            <div class="column"></div>
+            <div class="column"></div>
+            <div class="column"></div>
+            <div class="column"></div>
+            <div class="column"></div>
+            <div class="column"></div>
+            <div class="column"></div>
+        </div>
+    </div>
+    <div class="right">
+
+    </div>
+
+
+
+
+</div>
+<!--脚注区-->
+<div>
+
+</div>
+</body>
+</html>
